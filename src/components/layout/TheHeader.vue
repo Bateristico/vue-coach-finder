@@ -18,7 +18,7 @@ export default {};
 header {
   width: 100%;
   height: 5rem;
-  background-color: blueviolet;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: blue;
+  color: black;
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 1px solid transparent;
@@ -42,7 +42,7 @@ h1 {
 }
 
 h1 a {
-  color: white;
+  color: black;
   margin: 0;
 }
 
