@@ -10,8 +10,7 @@
     </div>
     <div class="form-control">
       <label for="description">Description</label>
-      <input type="text" id="description" v-model.trim="description" />
-      <textarea id="description" rows="5"></textarea>
+      <textarea id="description" rows="5" v-model.trim="description"></textarea>
     </div>
     <div class="form-control">
       <label for="rate">Hourly Rate</label>
@@ -38,6 +37,7 @@
 
 <script>
 export default {
+  emits: ['save-data'],
   data() {
     return {
       firstName: '',
@@ -56,8 +56,7 @@ export default {
         rate: this.rate,
         areas: this.areas
       };
-
-      console.log(formData);
+      this.$emit('save-data', formData);
     }
   }
 };
